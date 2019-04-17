@@ -56,16 +56,16 @@
                         android:id="@+id/item_resto_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Suksema Sushi Bar"
+                        tools:text="Airbnb"
                         android:textColor="@color/colorPrimaryText"
                         android:textSize="20sp"
                         android:textStyle="bold"/>
 
                     <TextView
-                        android:id="@+id/item_resto_subtitle"
+                        android:id="@+id/subtitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sushi and Japanese Restaurant"
+                        android:text="eCommerce/Marketplace	"
                         android:textColor="@color/colorSecondaryText"
                         android:textSize="16sp"
                         android:textStyle="normal"/>
@@ -75,28 +75,32 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <net.steamcrafted.materialiconlib.MaterialIconView xmlns:app="http://schemas.android.com/apk/res-auto"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:materialIcon="timer"
-                            app:materialIconSize="24dp"
-                            />
-                        <TextView
-                            android:id="@+id/item_resto_openhour_title"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorPrimaryText"
-                            tools:text="Open Hours "/>
-                        <TextView
-                            android:id="@+id/item_resto_openhour"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="4dp"
-                            android:textSize="16sp"
-                            android:textColor="@color/colorPrimaryText"
-                            tools:text="9 pm until 11 pm"/>
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_item_photo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            tools:src="@android:color/darker_gray"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/item_resto_openhour_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorSecondaryText"
+                                tools:text="Founder"/>
+                            <TextView
+                                android:id="@+id/openhour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/colorPrimaryText"
+                                tools:text="Aditya Herlambang"/>
+                        </LinearLayout>
                     </LinearLayout>
 
                     <LinearLayout
