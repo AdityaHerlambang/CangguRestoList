@@ -30,9 +30,8 @@ import com.mikepenz.materialdrawer.util.DrawerImageLoader;
 
 public class DrawerMenu {
 
-    String password, username, nama, sub_title, foto;
-    boolean session;
-    SharedPreferences sharedpreferences;
+    String nama, sub_title, foto;
+//    SharedPreferences sharedpreferences;
 
     public DrawerMenu(){
 
@@ -62,7 +61,7 @@ public class DrawerMenu {
                 .withActivity(activity)
                 .withHeaderBackground(R.drawable.material_background)
                 .addProfiles(
-                        new ProfileDrawerItem().withName(nama).withEmail(sub_title)
+                        new ProfileDrawerItem().withName(nama).withEmail(sub_title).withIcon(R.drawable.me)
                 )
                 .withOnAccountHeaderListener(new AccountHeader.OnAccountHeaderListener() {
                     @Override
@@ -93,9 +92,6 @@ public class DrawerMenu {
                     @Override
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         if (drawerItem.getIdentifier() == 1){
-                            SharedPreferences.Editor editor = sharedpreferences.edit();
-                            editor.clear();
-                            editor.apply();
 
                             Intent intent = new Intent(contextFinal, MainActivity.class);
                             contextFinal.startActivity(intent);
