@@ -7,7 +7,9 @@
     xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:id="@+id/item_startup_container"
+    >
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/item_restaurant_constraintLayout"
@@ -35,10 +37,10 @@
                 android:paddingBottom="8dp">
 
                 <ImageView
-                    android:id="@+id/item_resto_image"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/item_startup_image"
+                    android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:src="@drawable/suksema"
+                    android:src="@drawable/airbnb"
                     android:scaleType="centerCrop"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -48,12 +50,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginLeft="8dp"
+                    android:layout_marginLeft="12dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="8dp">
 
                     <TextView
-                        android:id="@+id/item_resto_title"
+                        android:id="@+id/item_startup_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         tools:text="Airbnb"
@@ -62,7 +64,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
-                        android:id="@+id/subtitle"
+                        android:id="@+id/item_startup_subtitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="eCommerce/Marketplace	"
@@ -76,7 +78,7 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/img_item_photo"
+                            android:id="@+id/item_startup_founder_image"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             tools:src="@android:color/darker_gray"/>
@@ -85,15 +87,15 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
                             <TextView
-                                android:id="@+id/item_resto_openhour_title"
+                                android:id="@+id/item_startup_founder_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="4dp"
                                 android:textSize="14sp"
                                 android:textColor="@color/colorSecondaryText"
-                                tools:text="Founder"/>
+                                android:text="Founder"/>
                             <TextView
-                                android:id="@+id/openhour"
+                                android:id="@+id/item_startup_founder"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="4dp"
@@ -111,7 +113,7 @@
                         android:orientation="horizontal">
 
                         <mehdi.sakout.fancybuttons.FancyButton
-                            android:id="@+id/item_resto_rate"
+                            android:id="@+id/item_startup_rate"
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
@@ -127,7 +129,7 @@
                             fancy:fb_textColor="#FFFFFF" />
 
                         <mehdi.sakout.fancybuttons.FancyButton
-                            android:id="@+id/item_resto_share"
+                            android:id="@+id/item_startup_share"
                             style="@style/Widget.AppCompat.Button.Borderless"
                             android:layout_width="100dp"
                             android:layout_height="40dp"

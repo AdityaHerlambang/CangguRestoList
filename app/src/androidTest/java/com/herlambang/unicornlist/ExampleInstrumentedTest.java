@@ -1,4 +1,4 @@
-package com.herlambang.canggurestaurants;
+package com.herlambang.unicornlist;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,4 +1,4 @@
-package com.herlambang.canggurestaurants;
+package com.herlambang.unicornlist;
 
 import org.junit.Test;
 
